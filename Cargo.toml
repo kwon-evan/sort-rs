@@ -1,11 +1,11 @@
 [package]
-name = "ioutrack"
+name = "sort-rs"
 version = "0.3.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [lib]
-name = "ioutrack"
+name = "sort_rs"
 crate-type = ["cdylib", "lib"]
 
 [dependencies]
@@ -18,7 +18,7 @@ numpy = "0.16.2"
 num = "0.4.0"
 anyhow = "<1.0.49"
 itertools = "0.10.3"
-lapjv = { git = "https://github.com/PaulKlinger/lapjv-rust", rev="12527061a3" }
+lapjv = { git = "https://github.com/PaulKlinger/lapjv-rust"}
 
 [dev-dependencies]
 ndarray-npy = "0.8.1"

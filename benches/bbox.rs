@@ -1,7 +1,7 @@
 use criterion::{criterion_group, criterion_main, Criterion};
-use ioutrack::bbox::ious;
 use ndarray::prelude::*;
 use ndarray_npy::read_npy;
+use sort_rs::bbox::ious;
 
 fn calc_ious(boxes1: ArrayView2<f32>, boxes2: ArrayView2<f32>) -> Array2<f32> {
     ious(boxes1, boxes2)

@@ -1,7 +1,7 @@
 use criterion::{criterion_group, criterion_main, Criterion};
-use ioutrack::{ByteTrack, Sort};
 use ndarray::prelude::*;
 use ndarray_npy::read_npy;
+use sort_rs::{ByteTrack, Sort};
 
 fn run_sort_on_dets(dets: &Array2<f32>, frame_borders: &Array1<usize>) {
     let mut tracker = Sort::new(

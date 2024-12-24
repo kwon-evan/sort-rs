@@ -7,7 +7,7 @@ Python package for IOU-based tracking ([SORT](https://arxiv.org/abs/1602.00763) 
 
 
 ```Python
-from ioutrack import Sort
+from sort_rs import Sort
 
 tracker = Sort(max_age=5, min_hits=2)
 
@@ -18,7 +18,7 @@ tracks_0 = tracker.update(boxes_0)
 #                            xmin ymin xmax ymax track_id
 assert tracks_0 == np.array([[10., 60., 50., 95., 1.],...])
 ```
-Demo video: [https://youtu.be/BLMnY8K9HBE](https://youtu.be/BLMnY8K9HBE)  
+Demo video: [https://youtu.be/BLMnY8K9HBE](https://youtu.be/BLMnY8K9HBE)
 Code to generate the demo video is in the [demo](https://github.com/PaulKlinger/ioutrack/tree/main/demo) folder.
 
 Roughly 30x faster than [python/numpy implementation](https://github.com/abewley/sort).

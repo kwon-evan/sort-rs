@@ -99,7 +99,7 @@ where
 ///
 /// ```
 /// use ndarray::prelude::array;
-/// let intersections = ioutrack::bbox::intersection_areas(
+/// let intersections = sort_rs::bbox::intersection_areas(
 ///     (array![[0., 0., 10., 12.]]).view(),
 ///     (array![[5., 7., 13., 11.], [9., 11., 13., 14.]]).view()
 /// );
@@ -137,7 +137,7 @@ pub fn intersection_areas<T: BboxNum>(boxes1: ArrayView2<T>, boxes2: ArrayView2<
 /// ```
 /// use ndarray::prelude::array;
 /// use approx::assert_abs_diff_eq;
-/// let iou_result = ioutrack::bbox::ious(
+/// let iou_result = sort_rs::bbox::ious(
 ///     (array![[0., 0., 10., 12.], [5., 7., 13., 11.]]).view(),
 ///     (array![[5., 7., 13., 11.], [9., 11., 13., 14.]]).view()
 /// );

@@ -15,7 +15,7 @@ pub use trackers::Sort;
 
 /// A Python module implemented in Rust.
 #[pymodule]
-fn ioutrack(_py: Python, m: &PyModule) -> PyResult<()> {
+fn sort_rs(_py: Python, m: &PyModule) -> PyResult<()> {
     m.add_class::<BaseTracker>()?;
     m.add_class::<Sort>()?;
     m.add_class::<ByteTrack>()?;

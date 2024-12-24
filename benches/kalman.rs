@@ -1,6 +1,6 @@
 use criterion::{criterion_group, criterion_main, Criterion};
-use ioutrack::kalman::{KalmanFilter, KalmanFilterParams};
 use ndarray::prelude::*;
+use sort_rs::kalman::{KalmanFilter, KalmanFilterParams};
 
 fn kalman_lin_vel_update_predict(measurements: &Vec<ArrayView1<f32>>) {
     let mut kf = KalmanFilter::<f32>::new(KalmanFilterParams {
