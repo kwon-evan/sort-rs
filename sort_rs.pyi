@@ -1,6 +1,7 @@
+from typing import Union
+
 import numpy as np
 import numpy.typing as npt
-from typing import Union
 
 class BaseTracker:
     def __new__(self) -> BaseTracker: ...
